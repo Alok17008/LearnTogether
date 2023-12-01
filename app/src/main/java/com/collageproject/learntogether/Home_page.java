@@ -24,7 +24,7 @@ public class Home_page extends AppCompatActivity {
         dought.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Home_page.this,Generativeai.class);
+                Intent intent = new Intent(Home_page.this, Generativeai.class);
                 startActivity(intent);
             }
         });

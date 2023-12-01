@@ -1,4 +1,5 @@
 package com.collageproject.learntogether;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -95,8 +96,8 @@ public class Generativeai extends AppCompatActivity {
         }
         RequestBody body = RequestBody.create(jsonBody.toString(),JSON);
         Request request = new Request.Builder()
-                .url("https://api.openai.com/v1/chat/completions")
-                .header("Authorization","Bearer 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")
+                .url("https://api.openai.com/v1/completions")
+                .header("Authorization","Bearer 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")
                 .post(body)
                 .build();
 
@@ -126,25 +127,11 @@ public class Generativeai extends AppCompatActivity {
             }
         });
 
+
+
+
+
     }
+
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
