@@ -87,7 +87,7 @@ public class Generativeai extends AppCompatActivity {
 
         JSONObject jsonBody = new JSONObject();
         try {
-            jsonBody.put("model","text-davinci-003");
+            jsonBody.put("model","gpt-3.5-turbo-instruct");
             jsonBody.put("prompt",question);
             jsonBody.put("max_tokens",4000);
             jsonBody.put("temperature",0);
@@ -97,7 +97,7 @@ public class Generativeai extends AppCompatActivity {
         RequestBody body = RequestBody.create(jsonBody.toString(),JSON);
         Request request = new Request.Builder()
                 .url("https://api.openai.com/v1/completions")
-                .header("Authorization","Bearer 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")
+                .header("Authorization","Bearer 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")
                 .post(body)
                 .build();
 
