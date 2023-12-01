@@ -6,23 +6,38 @@
     android:layout_height="match_parent"
     tools:context=".Home_page">
 
-    <Button
-        android:id="@+id/newsButton"
+    <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="View News"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@id/GenerativeAi"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-    <Button
-        android:id="@+id/GenerativeAi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Solve dought"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/newsButton" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/newsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View News" />
+
+        <Button
+            android:id="@+id/GenerativeAi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Solve Doubt" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log out"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

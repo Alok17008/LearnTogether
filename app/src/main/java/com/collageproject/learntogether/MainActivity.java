@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 // Start the HomeActivity after the delay
-                Intent intent = new Intent(MainActivity.this, Home_page.class);
+                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
                 startActivity(intent);
                 finish(); // Close the SplashActivity so it's not in the back stack
             }

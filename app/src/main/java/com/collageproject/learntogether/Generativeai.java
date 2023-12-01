@@ -97,7 +97,7 @@ public class Generativeai extends AppCompatActivity {
         RequestBody body = RequestBody.create(jsonBody.toString(),JSON);
         Request request = new Request.Builder()
                 .url("https://api.openai.com/v1/completions")
-                .header("Authorization","Bearer APIKEY")
+                .header("Authorization","Bearer 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")
                 .post(body)
                 .build();
 
