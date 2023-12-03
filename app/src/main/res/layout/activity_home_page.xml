@@ -68,7 +68,7 @@
                 android:clipToOutline="true"
                 android:paddingTop="10sp"
                 android:paddingEnd="10sp"
-                app:srcCompat="@drawable/vatar" />
+                app:srcCompat="@drawable/avtar" />
 
             <TextView
                 android:id="@+id/hi_anjali_"
@@ -108,21 +108,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="25dp"
-                        android:layout_marginTop="50dp"
+                        android:layout_marginTop="80dp"
                         android:text="Study Groups"
                         android:textColor="#065FA0"
-                        android:textSize="23sp"
+                        android:textSize="25sp"
                         android:textStyle="bold" />
 
-                    <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="25dp"
-                        android:backgroundTint="@color/white"
-                        android:text="Continue"
-                        android:textAllCaps="false"
-                        android:textColor="#1B1C1E"
-                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <ImageView
@@ -156,17 +147,6 @@
                         android:text="Tech-News"
                         android:textColor="#065FA0"
                         android:textSize="23sp"
-                        android:textStyle="bold" />
-
-                    <Button
-                        android:id="@+id/newsButton"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="25dp"
-                        android:backgroundTint="@color/white"
-                        android:text="Continue"
-                        android:textAllCaps="false"
-                        android:textColor="#1B1C1E"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -202,17 +182,6 @@
                         android:textColor="#065FA0"
                         android:textSize="23sp"
                         android:textStyle="bold" />
-
-                    <Button
-                        android:id="@+id/GenerativeAi"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="25dp"
-                        android:backgroundTint="@color/white"
-                        android:text="Continue"
-                        android:textAllCaps="false"
-                        android:textColor="#1B1C1E"
-                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <ImageView
@@ -246,70 +215,15 @@
                         android:textColor="#065FA0"
                         android:textSize="23sp"
                         android:textStyle="bold" />
-
-                    <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="25dp"
-                        android:backgroundTint="@color/white"
-                        android:text="Continue"
-                        android:textAllCaps="false"
-                        android:textColor="#1B1C1E"
-                        android:textStyle="bold" />
                 </LinearLayout>
-
                 <ImageView
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_marginLeft="5dp"
                     android:padding="8dp"
                     android:src="@drawable/planner" />
+
             </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="350dp"
-                android:layout_height="160dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/notesbg"
-                android:orientation="horizontal"
-                android:padding="5dp">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="25dp"
-                        android:layout_marginTop="50dp"
-                        android:text="Resources"
-                        android:textColor="#065FA0"
-                        android:textSize="23sp"
-                        android:textStyle="bold" />
-
-                    <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="25dp"
-                        android:backgroundTint="@color/white"
-                        android:text="Continue"
-                        android:textAllCaps="false"
-                        android:textColor="#1B1C1E"
-                        android:textStyle="bold" />
-                </LinearLayout>
-
-                <ImageView
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_marginLeft="5dp"
-                    android:padding="8dp"
-                    android:src="@drawable/studygpimg" />
-            </LinearLayout>
-
-
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
