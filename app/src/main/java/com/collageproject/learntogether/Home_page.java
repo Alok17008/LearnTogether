@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,7 +17,8 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class Home_page extends AppCompatActivity {
     Button news,doubt;
-    Button Button2;
+    LinearLayout GPT,TECHNEWS;
+    ImageView Menu;//Logout button for now
     GoogleSignInClient gClient;
     @SuppressLint("MissingInflatedId")
     @Override
@@ -24,9 +27,11 @@ public class Home_page extends AppCompatActivity {
         setContentView(R.layout.activity_home_page);
         news = findViewById(R.id.newsButton);
         doubt=findViewById(R.id.GenerativeAi);
-        Button2=findViewById(R.id.button2);
+        GPT=findViewById(R.id.gptid);
+        TECHNEWS=findViewById(R.id.technewsid);
+        Menu=findViewById(R.id.Menuid);
 
-        Button2.setOnClickListener(new View.OnClickListener() {
+        Menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 FirebaseAuth.getInstance().signOut();
@@ -37,14 +42,14 @@ public class Home_page extends AppCompatActivity {
             }
         });
 
-        news.setOnClickListener(new View.OnClickListener() {
+        TECHNEWS.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Home_page.this, TechnewsActivity.class);
                 startActivity(intent);
             }
         });
-        doubt.setOnClickListener(new View.OnClickListener() {
+        GPT.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Home_page.this, Generativeai.class);

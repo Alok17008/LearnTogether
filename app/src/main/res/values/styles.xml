@@ -6,5 +6,14 @@
         <item name="android:textColor">#065FA0</item>
     </style>
 
+    <style name="hi_anjali_">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#1B1C1E</item>
+    </style>
+
+    <style name="thank_you_f">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#878787</item>
+    </style>
 
 </resources>

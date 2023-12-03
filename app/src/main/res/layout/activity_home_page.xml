@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFF5EA"
     tools:context=".Home_page">
 
     <LinearLayout
@@ -16,28 +17,299 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <Button
-            android:id="@+id/newsButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="View News" />
-
-        <Button
-            android:id="@+id/GenerativeAi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Solve Doubt" />
-
     </LinearLayout>
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="match_parent"
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Log out"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="28dp"
+        app:srcCompat="@drawable/homepage" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="31dp"
+        android:layout_height="31dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="23dp"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/Menuid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="33dp"
+        app:srcCompat="@drawable/navbar" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToOutline="true"
+                android:paddingTop="10sp"
+                android:paddingEnd="10sp"
+                app:srcCompat="@drawable/vatar" />
+
+            <TextView
+                android:id="@+id/hi_anjali_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|top"
+                android:paddingTop="5sp"
+                android:paddingEnd="5sp"
+                android:text="@string/hi_anjali_"
+                android:textAppearance="@style/hi_anjali_" />
+
+            <TextView
+                android:id="@+id/thank_you_f"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|top"
+                android:paddingTop="5sp"
+                android:paddingEnd="5sp"
+                android:text="@string/thank_you_f"
+                android:textAppearance="@style/thank_you_f" />
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/studygrpbg"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="25dp"
+                        android:layout_marginTop="50dp"
+                        android:text="Study Groups"
+                        android:textColor="#065FA0"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:backgroundTint="@color/white"
+                        android:text="Continue"
+                        android:textAllCaps="false"
+                        android:textColor="#1B1C1E"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="5dp"
+                    android:padding="8dp"
+                    android:src="@drawable/studygpimg" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/technewsid"
+                android:layout_width="350dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/techbg"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="25dp"
+                        android:layout_marginTop="50dp"
+                        android:text="Tech-News"
+                        android:textColor="#065FA0"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/newsButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:backgroundTint="@color/white"
+                        android:text="Continue"
+                        android:textAllCaps="false"
+                        android:textColor="#1B1C1E"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="8dp"
+                    android:padding="8dp"
+                    android:src="@drawable/technews" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/gptid"
+                android:layout_width="350dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/gpt"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="25dp"
+                        android:layout_marginTop="50dp"
+                        android:text="DoubtGpt"
+                        android:textColor="#065FA0"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/GenerativeAi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:backgroundTint="@color/white"
+                        android:text="Continue"
+                        android:textAllCaps="false"
+                        android:textColor="#1B1C1E"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="20dp"
+                    android:padding="7dp"
+                    android:src="@drawable/doubtgpt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/plannerbg"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="25dp"
+                        android:layout_marginTop="50dp"
+                        android:text="Study Planner"
+                        android:textColor="#065FA0"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:backgroundTint="@color/white"
+                        android:text="Continue"
+                        android:textAllCaps="false"
+                        android:textColor="#1B1C1E"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="5dp"
+                    android:padding="8dp"
+                    android:src="@drawable/planner" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/notesbg"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="25dp"
+                        android:layout_marginTop="50dp"
+                        android:text="Resources"
+                        android:textColor="#065FA0"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:backgroundTint="@color/white"
+                        android:text="Continue"
+                        android:textAllCaps="false"
+                        android:textColor="#1B1C1E"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="5dp"
+                    android:padding="8dp"
+                    android:src="@drawable/studygpimg" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
