@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bgai"
     tools:context=".MainActivity">
 
     <androidx.recyclerview.widget.RecyclerView
@@ -12,15 +13,16 @@
         android:id="@+id/recycler_view"
         android:layout_above="@id/bottom_layout"
         />
+
     <TextView
+        android:id="@+id/welcome_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/welcome_text"
         android:layout_centerInParent="true"
-        android:text="Welcome to Easy ChatGPT\nTry it out now"
         android:gravity="center"
-        android:textSize="28dp"
-        />
+        android:text="Hi There!\nI am here to solve your doubts!\nAsk me anything"
+        android:textColor="#878787"
+        android:textSize="20dp" />
 
     <RelativeLayout
         android:layout_width="match_parent"
