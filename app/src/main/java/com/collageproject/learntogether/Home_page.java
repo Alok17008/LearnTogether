@@ -25,8 +25,6 @@ public class Home_page extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
-        news = findViewById(R.id.newsButton);
-        doubt=findViewById(R.id.GenerativeAi);
         GPT=findViewById(R.id.gptid);
         TECHNEWS=findViewById(R.id.technewsid);
         Menu=findViewById(R.id.Menuid);
