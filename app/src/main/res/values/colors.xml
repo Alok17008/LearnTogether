@@ -9,4 +9,22 @@
     <color name="white">#FFFFFFFF</color>
     <color name="lavender">#8692f7</color>
     <color name="purple">#a020f0</color>
+    <color name="colorPrimary">#5a98ec</color>
+    <color name="colorPrimaryDark">#457dca</color>
+    <color name="colorAccent">#88b0e7</color>
+
+    <color name="grey_40">#999999</color>
+    <color name="grey_60">#666666</color>
+    <color name="grey_80">#37474F</color>
+    <color name="grey_90">#263238</color>
+
+    <color name="red_300">#E57373</color>
+    <color name="red_400">#EF5350</color>
+    <color name="c4">#DCDCDC</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="appblue">#132980</color>
 </resources>

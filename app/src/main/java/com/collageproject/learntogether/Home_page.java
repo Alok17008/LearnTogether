@@ -32,7 +32,7 @@ public class Home_page extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
                         finish();
-                        startActivity(new Intent(Home_page.this, LoginActivity.class));
+                        startActivity(new Intent(Home_page.this, Phonelogin.class));
                     }
                 });
             }
