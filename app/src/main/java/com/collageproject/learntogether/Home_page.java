@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class Home_page extends AppCompatActivity {
     Button news,doubt;
@@ -28,13 +29,11 @@ public class Home_page extends AppCompatActivity {
         Button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                gClient.signOut().addOnCompleteListener(new OnCompleteListener<Void>() {
-                    @Override
-                    public void onComplete(@NonNull Task<Void> task) {
-                        finish();
-                        startActivity(new Intent(Home_page.this, Phonelogin.class));
-                    }
-                });
+                FirebaseAuth.getInstance().signOut();
+
+                Intent intent = new Intent(Home_page.this, Phonelogin.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(intent);
             }
         });
 

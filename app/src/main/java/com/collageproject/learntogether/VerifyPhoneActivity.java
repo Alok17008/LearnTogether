@@ -150,7 +150,7 @@ public class VerifyPhoneActivity extends AppCompatActivity {
                             Log.d(TAG, "signInWithCredential:success");
 
                             FirebaseUser mAuth = FirebaseAuth.getInstance().getCurrentUser();
-                            startActivity(new Intent(VerifyPhoneActivity.this,Home_page.class));
+                            startActivity(new Intent(VerifyPhoneActivity.this,Extradetails.class));
                             // Update UI
                         } else {
                             // Sign in failed, display a message and update the UI
