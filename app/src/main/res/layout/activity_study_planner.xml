@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudyPlanner">
+
+  <EditText
+      android:id="@+id/studySubjectEditText"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:hint="Study Subject"
+      android:padding="8dp"/>
+
+  <EditText
+      android:id="@+id/studyTimeEditText"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/studySubjectEditText"
+      android:layout_marginTop="16dp"
+      android:hint="Study Time (e.g., 2 hours)"
+      android:inputType="text"/>
+
+  <Button
+      android:id="@+id/addStudyPlanButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/studyTimeEditText"
+      android:layout_marginTop="16dp"
+      android:text="Add Study Plan"
+      android:layout_centerHorizontal="true"/>
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/studyPlanRecyclerView"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/addStudyPlanButton"
+      android:layout_marginTop="16dp"/>
+</RelativeLayout>

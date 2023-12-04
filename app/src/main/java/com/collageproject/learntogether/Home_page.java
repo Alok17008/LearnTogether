@@ -1,26 +1,21 @@
 package com.collageproject.learntogether;
-import android.annotation.SuppressLint;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class Home_page extends AppCompatActivity {
     Button news,doubt;
-    LinearLayout GPT,TECHNEWS;
+    LinearLayout GPT,TECHNEWS,STUDYPLANNER;
     ImageView Menu;//Logout button for now
     GoogleSignInClient gClient;
-    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +23,7 @@ public class Home_page extends AppCompatActivity {
         GPT=findViewById(R.id.gptid);
         TECHNEWS=findViewById(R.id.technewsid);
         Menu=findViewById(R.id.Menuid);
+        STUDYPLANNER=findViewById(R.id.sp);
 
         Menu.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,6 +47,13 @@ public class Home_page extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Home_page.this, Generativeai.class);
+                startActivity(intent);
+            }
+        });
+        STUDYPLANNER.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent= new Intent(Home_page.this,StudyPlanner.class);
                 startActivity(intent);
             }
         });
