@@ -11,28 +11,38 @@
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:backgroundTint="#FFF5EA"
+        android:padding="20dp">
+
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="40dp"
             android:fontFamily="sans-serif-black"
-            android:gravity="center"
-            android:text="Personal Details:"
-            android:textColor="#000000"
+            android:text="Personal Details"
+            android:textColor="#31D5F0"
+            android:padding="10dp"
             android:textSize="25sp" />
-
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_your_de"
+            android:textAppearance="@style/add_your_de"
+            android:gravity="top"
+            android:padding="10dp"/>
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10sp"
             android:layout_marginLeft="10sp"
-            android:layout_marginTop="20sp"
+            android:layout_marginTop="30sp"
             android:layout_marginEnd="10sp"
             android:layout_marginRight="10sp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:padding="20dp">
 
             <EditText
                 android:id="@+id/username"
@@ -68,7 +78,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:padding="20dp">
 
             <RadioGroup
                 android:id="@+id/gendergroup"
@@ -85,8 +96,8 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="Gender"
-                    android:textColor="#000000"
-                    android:textSize="14sp" />
+                    android:textColor="#1B1C1E"
+                    android:textSize="20sp" />
 
                 <RadioButton
                     android:id="@+id/radioButton"
@@ -128,7 +139,8 @@
             android:gravity="left"
             android:hint="Higest Qualification"
             android:inputType="text"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:padding="20dp"/>
 
         <EditText
             android:id="@+id/towncid"
@@ -144,11 +156,12 @@
             android:hint="School / Instiute"
             android:inputType="textPersonName"
             android:textColor="#000000"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:padding="20dp"/>
 
         <Button
             android:id="@+id/Savebutton"
-            android:layout_width="wrap_content"
+            android:layout_width="221dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginStart="20dp"
@@ -162,7 +175,9 @@
             android:text="Save"
             android:textAllCaps="false"
             android:textColor="#FFFCFC"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:backgroundTint="#015FA3"
+            />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

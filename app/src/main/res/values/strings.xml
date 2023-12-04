@@ -13,5 +13,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hi_anjali_">Hi Anjali!</string>
     <string name="thank_you_f">Thank You for Signing up.Select to proceed further.</string>
-
+    <string name="add_your_de">
+Add your Details
+</string>
 </resources>
