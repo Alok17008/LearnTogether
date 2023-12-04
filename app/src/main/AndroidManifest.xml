@@ -14,14 +14,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:targetApi="31">
-        <activity
-            android:name=".GroupChatActivity"
-            android:exported="false" />
+
         <activity
             android:name=".StudyPlanner"
             android:exported="false" />
         <activity
             android:name=".Extradetails"
+            android:exported="false" />
+        <activity
+            android:name=".Groupchat"
             android:exported="false" />
         <activity
             android:name=".Phonelogin"
