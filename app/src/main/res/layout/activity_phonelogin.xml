@@ -3,37 +3,70 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
+    android:background="#065FA0"
     android:fitsSystemWindows="true">
-
+    <View
+        android:id="@+id/rectangle_4"
+        android:layout_width="500dp"
+        android:layout_height="764dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-150dp"
+        android:background="@drawable/rectangle_4"
+        />
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:gravity="center"
-        android:orientation="vertical">
-
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
         <ImageView
-            android:layout_width="220dp"
-            android:layout_height="220dp"
-            android:src="@drawable/img" />
-
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/learntogether"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Verify Your Number"
+            android:text="Login"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
-            android:textColor="@color/grey_80"
+            android:textColor="#31D5F0"
+            android:textSize="30dp"
+            android:layout_marginLeft="25dp"
+            android:textStyle="bold"
+            android:layout_marginTop="90dp"/>
+
+        <TextView
+            android:id="@+id/to_continue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:text="@string/to_continue"
+            android:textAppearance="@style/to_continue"
+            android:gravity="top"/>
+        <TextView
+            android:id="@+id/enter_your_"
+            android:layout_width="223dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="40dp"
+            android:gravity="top"
+            android:text="@string/enter_your_"
+            android:textAppearance="@style/enter_your_"
             android:textStyle="bold" />
 
         <TextView
-            android:layout_width="280dp"
+            android:id="@+id/enter_your_name"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:gravity="center"
-            android:text="Please enter your mobile number to receive a verification code"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
-            android:textColor="@color/grey_60" />
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="25dp"
+            android:text="@string/enter_your_name" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -51,8 +84,9 @@
                 android:minWidth="48dp"
                 android:singleLine="true"
                 android:text="+91"
+                android:layout_marginLeft="25dp"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
-                android:textColor="@color/grey_80" />
+                android:textColor="#878787" />
 
             <View
                 android:layout_width="5dp"
@@ -60,7 +94,7 @@
 
             <EditText
                 android:id="@+id/editTextPhone"
-                android:layout_width="wrap_content"
+                android:layout_width="154dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
@@ -68,6 +102,7 @@
                 android:inputType="phone"
                 android:maxLength="10"
                 android:minHeight="48dp"
+                android:textColor="#878787"
                 tools:ignore="SpeakableTextPresentCheck" />
 
         </LinearLayout>
@@ -77,8 +112,19 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:background="@drawable/roundedbutton"
-            android:text="CONTINUE"
+            android:text="Verify"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:backgroundTint="#065FA0"
             android:textColor="@android:color/white" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LearnTogether"
+            android:textColor="#878787"
+            android:textSize="11sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="130dp"/>
 
     </LinearLayout>
 

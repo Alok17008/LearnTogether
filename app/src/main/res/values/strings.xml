@@ -16,4 +16,16 @@
     <string name="add_your_de">
 Add your Details
 </string>
+    <string name="login">
+Login
+</string>
+    <string name="to_continue">
+To continue your account
+</string>
+    <string name="enter_your_">
+Enter your \nMobile Number \n
+</string>
+    <string name="enter_your_name">
+Enter your 10-digit Phone number
+</string>
 </resources>

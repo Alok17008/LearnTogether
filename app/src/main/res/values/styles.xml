@@ -19,4 +19,20 @@
         <item name="android:textSize">16sp</item>
         <item name="android:textColor">#878787</item>
     </style>
+    <style name="login">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">#31D5F0</item>
+    </style>
+    <style name="to_continue">
+    <item name="android:textSize">16sp</item>
+    <item name="android:textColor">#878787</item> </style>
+    <style name="enter_your_">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">#1B1C1E</item>
+    </style>
+    <style name="enter_your_name">
+        <item name="android:textSize">5dp</item>
+        <item name="android:textColor">#878787</item>
+    </style>
+
 </resources>
